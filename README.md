@@ -67,6 +67,79 @@ To apply transforms:
 putout lib test --fix
 ```
 
+## .putout.json
+You can use the following `.putout.json` file if you want to disable all the rules:
+```
+{
+    "rules": {
+        "apply-destructuring": "off",
+        "apply-nullish-coalescing": "off",
+        "apply-numeric-separators": "off",
+        "apply-optional-chaining": "off",
+        "apply-shorthand-properties": "off",
+        "apply-top-level-await": "off",
+        "convert-array-copy-to-slice": "off",
+        "convert-binary-expression-to-boolean": "off",
+        "convert-commonjs-to-esm": "off",
+        "convert-equal-to-strict-equal": "off",
+        "convert-esm-to-commonjs": "off",
+        "convert-for-each-to-for-of": "off",
+        "convert-for-in-to-for-of": "off",
+        "convert-for-to-for-of": "off",
+        "convert-generic-to-shorthand": "off",
+        "convert-index-of-to-includes": "off",
+        "convert-math-pow": "off",
+        "convert-object-assign-to-merge-spread": "off",
+        "convert-template-to-string": "off",
+        "convert-to-arrow-function": "off",
+        "convert-top-level-return": "off",
+        "extract-object-properties": "off",
+        "extract-sequence-expressions": "off",
+        "madrun": "off",
+        "merge-destructuring-properties": "off",
+        "merge-duplicate-imports": "off",
+        "merge-if-statements": "off",
+        "promises": "off",
+        "putout": "off",
+        "remove-boolean-from-logical-expressions": "off",
+        "remove-console": "off",
+        "remove-constant-conditions": "off",
+        "remove-debugger": "off",
+        "remove-double-negations": "off",
+        "remove-duplicate-keys": "off",
+        "remove-empty": "off",
+        "remove-nested-blocks": "off",
+        "remove-only": "off",
+        "remove-process-exit": "off",
+        "remove-skip": "off",
+        "remove-unreachable-code": "off",
+        "remove-unreferenced-variables": "off",
+        "remove-unused-expressions": "off",
+        "remove-unused-for-of-variables": "off",
+        "remove-unused-private-fields": "off",
+        "remove-unused-types": "off",
+        "remove-unused-variables": "off",
+        "remove-useless-arguments": "off",
+        "remove-useless-array-from": "off",
+        "remove-useless-async": "off",
+        "remove-useless-await": "off",
+        "remove-useless-escape": "off",
+        "remove-useless-for-of": "off",
+        "remove-useless-functions": "off",
+        "remove-useless-spread": "off",
+        "remove-useless-template-expressions": "off",
+        "remove-useless-typeof": "off",
+        "remove-useless-types": "off",
+        "remove-useless-variables": "off",
+        "reuse-duplicate-init": "off",
+        "simplify-ternary": "off",
+        "split-nested-destructuring": "off",
+        "split-variable-declarations": "off",
+        "strict-mode": "off"
+    }
+}
+```
+
 ## Environment variables
 
 `Putout` supports next `environment variables`:
